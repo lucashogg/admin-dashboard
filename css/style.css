@@ -1,5 +1,7 @@
 /* Reset */
 @import './reset.css';
+/* Colors */
+@import './colors.css';
 
 /* Global */
 body {
