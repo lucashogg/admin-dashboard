@@ -1,0 +1,25 @@
+/* Reset */
+@import './reset.css';
+
+/* Global */
+body {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+}
+
+/* Sidebar */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+}
+
+.logo svg {
+    max-width: 2rem;
+}
+
+.logo span {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
