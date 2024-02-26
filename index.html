@@ -16,7 +16,7 @@
 <body>
     <div class="wrapper">
         <div class="header">
-            <div class="header-left">
+            <div class="left">
                 <form action="" role="search">
                     <label for="search"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <title>magnify</title>
@@ -26,13 +26,24 @@
                     <input type="search" id="search" name="search" placeholder="Search for a project, etc...">
                 </form>
             </div>
-            <div class="header-right">
+            <div class="right">
                 <div class="notification-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>bell</title><path d="M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M14,21A2,2 0 0,1 12,23A2,2 0 0,1 10,21" /></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <title>bell</title>
+                        <path
+                            d="M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M14,21A2,2 0 0,1 12,23A2,2 0 0,1 10,21" />
+                    </svg>
                 </div>
                 <div class="user-account-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account-circle</title><path d="M12,19.2C9.5,19.2 7.29,17.92 6,16C6.03,14 10,12.9 12,12.9C14,12.9 17.97,14 18,16C16.71,17.92 14.5,19.2 12,19.2M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z" /></svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>menu-down</title><path d="M7,10L12,15L17,10H7Z" /></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <title>account-circle</title>
+                        <path
+                            d="M12,19.2C9.5,19.2 7.29,17.92 6,16C6.03,14 10,12.9 12,12.9C14,12.9 17.97,14 18,16C16.71,17.92 14.5,19.2 12,19.2M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <title>menu-down</title>
+                        <path d="M7,10L12,15L17,10H7Z" />
+                    </svg>
                 </div>
             </div>
         </div>
@@ -126,7 +137,46 @@
                 </ul>
             </div>
         </div>
-        <div class="main"></div>
+        <div class="main">
+            <div class="main-header">
+                <div class="left">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <title>account-circle</title>
+                        <path
+                            d="M12,19.2C9.5,19.2 7.29,17.92 6,16C6.03,14 10,12.9 12,12.9C14,12.9 17.97,14 18,16C16.71,17.92 14.5,19.2 12,19.2M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z" />
+                    </svg>
+                    <div class="user-greeting">
+                        <span>Hi there,</span>
+                        <span class="user-title">
+                            Natalie!
+                        </span>
+                    </div>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li>
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <title>plus</title>
+                                    <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                                </svg><span>New</span></a>
+                        </li>
+                        <li>
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <title>upload</title>
+                                    <path d="M9,16V10H5L12,3L19,10H15V16H9M5,20V18H19V20H5Z" />
+                                </svg><span>Upload</span></a>
+                        </li>
+                        <li>
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <title>share</title>
+                                    <path d="M21,12L14,5V9C7,10 4,15 3,20C5.5,16.5 9,14.9 14,14.9V19L21,12Z" />
+                                </svg><span>Share</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-content"></div>
+        </div>
     </div>
 </body>
 
