@@ -68,7 +68,7 @@ svg {
 }
 
 .header .user-account-icon {
-    width: 3rem;
+    max-width: 3rem;
 }
 
 .hamburger {
@@ -154,7 +154,7 @@ svg.sidebar-close {
 .main-header .left {
     display: flex;
     align-items: center;
-    gap: .25rem;
+    gap: 1rem;
 }
 
 .user-greeting {
@@ -191,8 +191,8 @@ svg.sidebar-close {
     transition: .1s ease;
 }
 
-.main-header .left svg {
-    width: 4rem;
+.main-header .left img {
+    max-width: 4rem;
 }
 
 .main-header .right svg {
@@ -298,8 +298,8 @@ svg.sidebar-close {
     padding: 1rem;
 }
 
-.trending svg {
-    width: 3rem;
+.trending img {
+    max-width: 3rem;
 }
 
 .trending-grid {
