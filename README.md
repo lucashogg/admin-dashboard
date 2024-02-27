@@ -1,6 +1,6 @@
 # admin-dashboard
 
-View live site on [GitHub Pages](https://lucashogg.github.io/calculator/)
+View live site on [GitHub Pages](https://lucashogg.github.io/admin-dashboard/)
 
 ## About
 
