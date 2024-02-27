@@ -1,4 +1,9 @@
 :root {
-    --background-color: #e7e5e4;
+    --main-bg-color: #e7e5e4;
+    --secondary-bg-color: #fafaf9;
     --body-color: #292524;
+    --secondary-body-color: #78716c;
+    --border-color: #d6d3d1;
+    --card-accent-color: #476C9B;
+    --logo-color: #F39237;
 }

@@ -7,6 +7,8 @@
 body {
     font-family: "Lato", sans-serif;
     font-style: normal;
+    background-color: var(--main-bg-color);
+    color: var(--body-color);
 }
 
 a {
@@ -21,13 +23,18 @@ a {
     height: 100vh;
 }
 
+svg {
+    fill: var(--body-color);
+}
+
 /**** Header ****/
 .header {
     grid-area: 1 / 2 / 2 / 3;
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--secondary-bg-color);
 }
 
 .header svg {
@@ -52,7 +59,8 @@ a {
     height: 2rem;
     width: 100%;
     padding: 10px;
-    border: 1px solid;
+    border: none;
+    background-color: var(--main-bg-color);
 }
 
 .header .right {
@@ -70,7 +78,8 @@ a {
 /**** Sidebar ****/
 .sidebar {
     grid-area: 1 / 1 / 3 / 2;
-    border-right: 1px solid;
+    border-right: 1px solid var(--border-color);
+    background-color: var(--secondary-bg-color);
 }
 
 /* Logo */
@@ -83,6 +92,7 @@ a {
 
 .logo svg {
     width: 2rem;
+    fill: var(--logo-color);
 }
 
 .logo h1 {
@@ -102,15 +112,22 @@ svg.sidebar-close {
 }
 
 .link-section:not(:nth-last-child(1)) {
-    border-bottom: 1px solid;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .link-section li {
     padding: 1rem;
+    border-left: 3px solid transparent;
+}
+
+.link-section li:hover {
+    background-color: var(--main-bg-color);
+    border-left: 3px solid var(--body-color);
 }
 
 .link-section a {
     display: flex;
+    align-items: center;
     gap: .5rem;
 }
 
@@ -129,8 +146,9 @@ svg.sidebar-close {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid var(--border-color);
     padding: 1rem;
+    background-color: var(--secondary-bg-color);
 }
 
 .main-header .left {
@@ -143,11 +161,13 @@ svg.sidebar-close {
     display: flex;
     flex-direction: column;
     gap: .25rem;
+    color: var(--secondary-body-color);
 }
 
 .user-title {
     font-size: 1.25rem;
     font-weight: 700;
+    color: var(--body-color);
 }
 
 .main-header .right ul {
@@ -159,9 +179,13 @@ svg.sidebar-close {
 .main-header .right a {
     display: flex;
     align-items: center;
-    border: 1px solid;
+    border: 1px solid var(--border-color);
     padding: .25rem .75rem;
     border-radius: 25px;
+}
+
+.main-header .right a:hover {
+    background-color: var(--main-bg-color);
 }
 
 .main-header .left svg {
@@ -178,13 +202,16 @@ svg.sidebar-close {
     grid-template-columns: 3fr 1fr;
 }
 
-/* Main Content Titles */
 .projects h2,
 .announcements h2,
 .trending h2 {
     font-weight: 700;
     font-size: 1.25rem;
     padding-bottom: 1rem;
+}
+
+.main-content p {
+    color: var(--secondary-body-color);
 }
 
 /* Projects */
@@ -203,9 +230,10 @@ svg.sidebar-close {
 
 .project-card {
     padding: 1.5rem;
-    border: 1px solid;
+    border: 1px solid var(--border-color);
     border-radius: 8px;
-    border-left: 6px solid;
+    border-left: 6px solid var(--card-accent-color);
+    background-color: var(--secondary-bg-color);
 }
 
 .project-card h3 {
@@ -234,16 +262,17 @@ svg.sidebar-close {
 
 .announcement-grid {
     padding: 1.5rem;
-    border: 1px solid;
+    border: 1px solid var(--border-color);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
+    background-color: var(--secondary-bg-color);
 }
 
 .announcement:not(:nth-last-child(1))::after {
     content: "";
     display: block;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid var(--border-color);
     width: 100%;
     margin: .75rem 0;
 }
@@ -270,11 +299,12 @@ svg.sidebar-close {
 
 .trending-grid {
     padding: 1.5rem;
-    border: 1px solid;
+    border: 1px solid var(--border-color);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    background-color: var(--secondary-bg-color);
 }
 
 .trend {
@@ -291,6 +321,7 @@ svg.sidebar-close {
 
 .trend .user-project {
     font-size: .9rem;
+    color: var(--secondary-body-color);
 }
 
 /**** Media Queries ***/
