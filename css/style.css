@@ -322,13 +322,12 @@ svg.sidebar-close {
 
     .sidebar {
         position: absolute;
-        transform: translate(-100%);
-        transition: .3s ease;
+        transform: translateX(-100%);
+        transition: .3s ease-in-out;
     }
 
     .sidebar.reveal {
-        transform: translate(0);
-        transition: .3s ease;
+        transform: translateX(0);
         height: 100vh;
     }
 
