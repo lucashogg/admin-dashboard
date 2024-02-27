@@ -90,6 +90,12 @@ a {
     font-size: 1.5rem;
 }
 
+svg.sidebar-close {
+    width: 1.5rem;
+    margin-left: 1rem;
+    display: none;
+}
+
 /* Nav */
 .link-section {
     padding: 1rem 0;
@@ -317,5 +323,16 @@ a {
     .sidebar {
         position: absolute;
         transform: translate(-100%);
+        transition: .3s ease;
+    }
+
+    .sidebar.reveal {
+        transform: translate(0);
+        transition: .3s ease;
+        height: 100vh;
+    }
+
+    svg.sidebar-close {
+        display: block;
     }
 }
