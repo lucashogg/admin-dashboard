@@ -8,7 +8,7 @@ View live site on [GitHub Pages](https://lucashogg.github.io/calculator/)
 
 ![admin-dashboard-demo](https://github.com/lucashogg/admin-dashboard/assets/73367876/ec23ab81-6f13-4a2f-98c5-35c555950a89)
 
-In this **The Odin Project** assignment we are tasked with building a modern, CRM-styled admin dashboard. This exercise was specifically designed to build our CSS Grid skills.
+In this **The Odin Project** assignment we are tasked with building a modern, CRM/SaaS-styled admin dashboard. This exercise was specifically designed to build our CSS Grid skills.
 
 ### Features
 
