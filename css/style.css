@@ -103,6 +103,7 @@ svg {
 svg.sidebar-close {
     width: 1.5rem;
     margin-left: 1rem;
+    fill: var(--body-color);
     display: none;
 }
 
@@ -331,7 +332,7 @@ svg.sidebar-close {
 }
 
 /**** Media Queries ***/
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1024px) {
     .main-content {
         grid-template-columns: 1fr;
     }
@@ -345,6 +346,10 @@ svg.sidebar-close {
     .main-header {
         flex-wrap: wrap;
         gap: .5rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
 }
 
