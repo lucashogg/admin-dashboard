@@ -148,7 +148,7 @@ svg.sidebar-close {
     align-items: center;
     border-bottom: 1px solid var(--border-color);
     padding: 1rem;
-    background-color: var(--secondary-bg-color);
+    /* background-color: var(--secondary-bg-color); */
 }
 
 .main-header .left {
@@ -182,10 +182,13 @@ svg.sidebar-close {
     border: 1px solid var(--border-color);
     padding: .25rem .75rem;
     border-radius: 25px;
+    background-color: var(--secondary-bg-color);
+    box-shadow: 0px 1px 5px var(--shadow-color);
 }
 
 .main-header .right a:hover {
-    background-color: var(--main-bg-color);
+    scale: 1.05;
+    transition: .1s ease;
 }
 
 .main-header .left svg {
@@ -234,6 +237,7 @@ svg.sidebar-close {
     border-radius: 8px;
     border-left: 6px solid var(--card-accent-color);
     background-color: var(--secondary-bg-color);
+    box-shadow: 0px 1px 5px var(--shadow-color);
 }
 
 .project-card h3 {
@@ -267,6 +271,7 @@ svg.sidebar-close {
     display: flex;
     flex-direction: column;
     background-color: var(--secondary-bg-color);
+    box-shadow: 0px 1px 5px var(--shadow-color);
 }
 
 .announcement:not(:nth-last-child(1))::after {
@@ -305,6 +310,7 @@ svg.sidebar-close {
     flex-direction: column;
     gap: 1rem;
     background-color: var(--secondary-bg-color);
+    box-shadow: 0px 1px 5px var(--shadow-color);
 }
 
 .trend {
